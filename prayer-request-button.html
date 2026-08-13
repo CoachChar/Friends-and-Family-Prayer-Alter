@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Prayer | The Friends and Family Prayer Altar</title>
+  <meta name="description" content="Bring your prayer request to The Friends and Family Prayer Altar.">
+  <style>
+    :root{
+      --ivory:#fffaf1;
+      --cream:#f8f0df;
+      --deep:#2f231d;
+      --gold:#c49a53;
+      --sage:#71806d;
+      --sage-deep:#4f5f4b;
+      --muted:#776b63;
+      --line:rgba(196,154,83,.28);
+      --shadow:0 20px 60px rgba(56,40,28,.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      color:var(--deep);
+      background:
+        radial-gradient(circle at 10% 5%,rgba(231,207,156,.30),transparent 28%),
+        radial-gradient(circle at 90% 12%,rgba(113,128,109,.16),transparent 24%),
+        linear-gradient(180deg,#fffdf8,#f7efe1);
+      font-family:"Segoe UI",Arial,sans-serif;
+    }
+    .topbar{
+      position:sticky;top:0;z-index:10;
+      background:rgba(255,250,241,.94);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(196,154,83,.18);
+    }
+    .nav{
+      max-width:1080px;margin:auto;padding:14px 22px;
+      display:flex;align-items:center;justify-content:space-between;gap:18px;
+    }
+    .brand{
+      display:flex;align-items:center;gap:11px;
+      font-family:Georgia,serif;font-weight:700;
+    }
+    .seal{
+      width:42px;height:42px;border-radius:50%;
+      border:1px solid var(--gold);display:grid;place-items:center;
+      color:var(--gold);font-size:22px;background:white;
+    }
+    .home{
+      text-decoration:none;color:var(--sage-deep);font-weight:800;
+    }
+    .hero{
+      max-width:900px;margin:auto;text-align:center;padding:78px 22px 36px;
+    }
+    .kicker{
+      color:var(--gold);font-size:.8rem;font-weight:800;
+      text-transform:uppercase;letter-spacing:.16em;
+    }
+    h1{
+      font-family:Georgia,serif;
+      font-size:clamp(2.8rem,6vw,5.4rem);
+      line-height:1.02;margin:10px 0 18px;font-weight:600;
+    }
+    .hero p{
+      color:var(--muted);font-size:1.08rem;line-height:1.75;
+      max-width:720px;margin:auto;
+    }
+    .scripture{
+      max-width:720px;margin:28px auto 0;padding:19px 22px;
+      border-top:1px solid var(--gold);
+      border-bottom:1px solid var(--gold);
+      font-family:Georgia,serif;font-style:italic;color:#665950;
+    }
+    .cta-wrap{
+      max-width:900px;margin:0 auto 90px;padding:20px 22px;
+    }
+    .cta-card{
+      background:rgba(255,255,255,.88);
+      border:1px solid var(--line);
+      border-radius:28px;
+      box-shadow:var(--shadow);
+      padding:48px 30px;
+      text-align:center;
+    }
+    .cta-card h2{
+      font-family:Georgia,serif;
+      font-size:2rem;margin:0 0 14px;
+    }
+    .cta-card p{
+      max-width:650px;margin:0 auto 26px;
+      color:var(--muted);line-height:1.7;
+    }
+    .btn{
+      display:inline-block;
+      padding:16px 28px;
+      border-radius:999px;
+      background:linear-gradient(135deg,var(--sage-deep),#64775f);
+      color:white;
+      text-decoration:none;
+      font-weight:800;
+      box-shadow:0 14px 30px rgba(79,95,75,.2);
+      transition:.2s ease;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .privacy{
+      margin:28px auto 0;
+      max-width:680px;
+      padding:15px 18px;
+      background:#f4ead8;
+      border-left:4px solid var(--gold);
+      border-radius:12px;
+      color:#5e5149;
+      line-height:1.6;
+      text-align:left;
+    }
+    footer{
+      text-align:center;padding:32px 20px 45px;
+      color:#897b72;border-top:1px solid rgba(196,154,83,.18);
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <nav class="nav">
+      <div class="brand">
+        <div class="seal">✝</div>
+        <span>The Friends and Family Prayer Altar</span>
+      </div>
+      <a class="home" href="index.html">← Home</a>
+    </nav>
+  </div>
+
+  <header class="hero">
+    <div class="kicker">Bring Your Request to the Altar</div>
+    <h1>How can we pray for you?</h1>
+    <p>
+      Whether you are requesting prayer for yourself or someone you care about,
+      you are welcome here. Share only what you are comfortable sharing.
+    </p>
+    <div class="scripture">
+      “Casting all your anxiety on Him, because He cares for you.”
+      — 1 Peter 5:7, NASB 1995
+    </div>
+  </header>
+
+  <main class="cta-wrap">
+    <div class="cta-card">
+      <h2>Ready to share your prayer request?</h2>
+      <p>
+        Click below to open the secure Friends and Family Prayer Request form.
+        You may choose whether your request is public, private, first-name only,
+        relationship only, or anonymous.
+      </p>
+
+      <a class="btn"
+         href="https://www.cognitoforms.com/AshbyProfessionalServices/FriendsAndFamilyPrayerRequest"
+         target="_blank" rel="noopener">
+         Request Prayer
+      </a>
+
+      <div class="privacy">
+        <strong>Your privacy matters.</strong> Public requests are reviewed before sharing.
+        Requests marked private remain private with the prayer team.
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <strong>The Friends and Family Prayer Altar</strong><br>
+    A place of prayer, faith, encouragement, and love.
+  </footer>
+</body>
+</html>
