@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Prayer | The Friends and Family Prayer Altar</title>
+  <meta name="description" content="Submit a prayer request to The Friends and Family Prayer Altar." />
+  <style>
+    :root{
+      --ivory:#fffaf1;
+      --cream:#f8f0df;
+      --deep:#2f231d;
+      --gold:#c49a53;
+      --sage:#71806d;
+      --sage-deep:#4f5f4b;
+      --muted:#776b63;
+      --line:rgba(196,154,83,.28);
+      --shadow:0 20px 60px rgba(56,40,28,.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      color:var(--deep);
+      background:
+        radial-gradient(circle at 10% 5%, rgba(231,207,156,.30), transparent 28%),
+        radial-gradient(circle at 90% 12%, rgba(113,128,109,.16), transparent 24%),
+        linear-gradient(180deg,#fffdf8,#f7efe1);
+      font-family:"Segoe UI",Arial,sans-serif;
+    }
+    .topbar{
+      background:rgba(255,250,241,.92);
+      border-bottom:1px solid rgba(196,154,83,.18);
+      position:sticky;top:0;z-index:10;
+      backdrop-filter:blur(12px);
+    }
+    .nav{
+      max-width:1050px;margin:auto;padding:14px 22px;
+      display:flex;align-items:center;justify-content:space-between;gap:20px;
+    }
+    .brand{
+      display:flex;align-items:center;gap:11px;
+      font-family:Georgia,serif;font-weight:700;
+    }
+    .seal{
+      width:42px;height:42px;border-radius:50%;
+      border:1px solid var(--gold);display:grid;place-items:center;
+      color:var(--gold);font-size:22px;background:white;
+    }
+    .back{
+      color:var(--sage-deep);text-decoration:none;font-weight:700;
+    }
+    .hero{
+      text-align:center;max-width:850px;margin:auto;padding:65px 22px 30px;
+    }
+    .kicker{
+      color:var(--gold);font-size:.8rem;font-weight:800;
+      text-transform:uppercase;letter-spacing:.16em;
+    }
+    h1{
+      font-family:Georgia,serif;font-size:clamp(2.6rem,6vw,5rem);
+      line-height:1.02;margin:10px 0 15px;font-weight:600;
+    }
+    .hero p{color:var(--muted);font-size:1.08rem;line-height:1.75;max-width:700px;margin:auto}
+    .scripture{
+      max-width:700px;margin:26px auto 0;padding:18px 22px;
+      border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);
+      color:#665950;font-family:Georgia,serif;font-style:italic;
+    }
+    .wrap{
+      max-width:860px;margin:0 auto 80px;padding:22px;
+    }
+    .form-card{
+      background:rgba(255,255,255,.88);
+      border:1px solid var(--line);
+      border-radius:28px;
+      box-shadow:var(--shadow);
+      padding:34px;
+    }
+    .notice{
+      background:#f4ead8;border-left:4px solid var(--gold);
+      border-radius:12px;padding:16px 18px;margin-bottom:28px;
+      color:#5e5149;line-height:1.6;
+    }
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .field{margin-bottom:20px}
+    label{
+      display:block;font-weight:800;margin-bottom:7px;color:#493c34;
+    }
+    .hint{display:block;font-size:.88rem;color:var(--muted);margin-top:5px}
+    input[type="text"],input[type="email"],select,textarea{
+      width:100%;border:1px solid #d8cdbc;border-radius:14px;
+      padding:13px 14px;font:inherit;background:#fffdf9;color:var(--deep);
+      outline:none;
+    }
+    input:focus,select:focus,textarea:focus{
+      border-color:var(--gold);box-shadow:0 0 0 3px rgba(196,154,83,.12);
+    }
+    textarea{min-height:150px;resize:vertical}
+    fieldset{
+      border:1px solid #e2d6c5;border-radius:16px;padding:18px;margin:0 0 20px;
+    }
+    legend{font-weight:800;padding:0 7px}
+    .choice{display:flex;gap:10px;align-items:flex-start;margin:10px 0}
+    .choice input{margin-top:4px}
+    .submit{
+      width:100%;border:none;border-radius:999px;padding:15px 22px;
+      background:linear-gradient(135deg,var(--sage-deep),#63765e);
+      color:white;font-weight:800;font-size:1rem;cursor:pointer;
+      box-shadow:0 12px 26px rgba(79,95,75,.18);
+    }
+    .submit:hover{transform:translateY(-1px)}
+    .footnote{
+      text-align:center;color:var(--muted);font-size:.88rem;
+      margin:17px auto 0;max-width:680px;line-height:1.6;
+    }
+    footer{
+      text-align:center;padding:30px 20px 45px;color:#897b72;
+      border-top:1px solid rgba(196,154,83,.18);
+    }
+    @media(max-width:700px){
+      .row{grid-template-columns:1fr}
+      .form-card{padding:24px 18px}
+      .nav{align-items:flex-start}
+      .brand{font-size:.9rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <nav class="nav">
+      <div class="brand"><div class="seal">✝</div><span>The Friends and Family Prayer Altar</span></div>
+      <a class="back" href="index.html">← Home</a>
+    </nav>
+  </div>
+
+  <header class="hero">
+    <div class="kicker">Bring Your Request to the Altar</div>
+    <h1>How can we pray for you?</h1>
+    <p>
+      Share only what you are comfortable sharing. Your request can be public, private,
+      first-name only, or anonymous.
+    </p>
+    <div class="scripture">
+      “Casting all your anxiety on Him, because He cares for you.” — 1 Peter 5:7, NASB 1995
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="form-card"><div class="notice"><strong>Your privacy matters.</strong> Public prayer requests are reviewed before sharing. Requests marked private remain private with the prayer team.</div><script src="https://www.cognitoforms.com/f/seamless.js" data-key="msRxMoFYkkK1FA_I6WF0-Q" data-form="34"></script></div>
+  </main>
+
+  <footer>
+    <strong>The Friends and Family Prayer Altar</strong><br>
+    A place of prayer, faith, encouragement, and love.
+  </footer>
+</body>
+</html>
