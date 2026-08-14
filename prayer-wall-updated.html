@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prayer Wall | The Friends and Family Prayer Altar</title>
+<style>
+:root{--ivory:#fffaf1;--deep:#2f231d;--gold:#c49a53;--sage:#71806d;--sage2:#4f5f4b;--muted:#776b63;--line:#e6d7bd}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(#fffdf8,#f7efe1);color:var(--deep);font-family:Arial,sans-serif}
+nav{padding:15px 5%;display:flex;justify-content:space-between;align-items:center;background:#fffaf1;border-bottom:1px solid var(--line)}
+.brand{font:700 18px Georgia,serif}nav a{color:var(--sage2);text-decoration:none;font-weight:bold;margin-left:18px}
+.hero{text-align:center;padding:70px 20px 45px;max-width:900px;margin:auto}.eyebrow{color:var(--gold);font-weight:bold;letter-spacing:2px;font-size:13px}
+h1{font:600 clamp(45px,7vw,76px) Georgia,serif;margin:12px 0}.hero p{color:var(--muted);font-size:18px;line-height:1.7}
+.scripture{max-width:720px;margin:25px auto;padding:18px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);font:italic 18px Georgia,serif}
+main{max-width:1120px;margin:auto;padding:20px 22px 80px}.heading{display:flex;justify-content:space-between;align-items:end;margin:30px 0 20px;gap:20px}.heading h2{font:600 34px Georgia,serif;margin:0}.heading p{color:var(--muted);margin:6px 0 0}
+.btn{display:inline-block;background:var(--sage2);color:white;text-decoration:none;padding:13px 20px;border-radius:30px;font-weight:bold}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;border:1px solid var(--line);border-radius:22px;padding:25px;box-shadow:0 15px 40px rgba(50,35,25,.08)}
+.tag{font-size:12px;color:var(--gold);font-weight:bold;text-transform:uppercase;letter-spacing:1px}.card h3{font:600 23px Georgia,serif;margin:9px 0}.card p{color:#665a52;line-height:1.65}
+.verse{background:#faf3e5;border-left:3px solid var(--gold);padding:13px;margin:18px 0;font:italic 15px Georgia,serif;line-height:1.5}
+.pray{border:0;background:var(--sage2);color:white;border-radius:25px;padding:11px 17px;font-weight:bold;cursor:pointer}.count{float:right;color:var(--sage2);font-weight:bold;padding-top:10px}
+.praise{margin-top:65px;background:var(--sage2);border-radius:28px;padding:35px;color:white}.praise h2{font:600 34px Georgia,serif;margin:0 0 8px}.praise p{color:#e8eee5}
+.praise-btn{display:inline-block;margin-top:16px;background:#fffaf1;color:var(--sage2);text-decoration:none;padding:13px 21px;border-radius:30px;font-weight:bold;border:1px solid #e7cf9c}
+.praise-btn:hover{transform:translateY(-1px)}
+.praise-card{background:white;color:var(--deep);padding:22px;border-radius:18px;margin-top:22px}.praise-card p{color:var(--muted)}
+footer{text-align:center;padding:35px;border-top:1px solid var(--line);color:var(--muted)}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.heading{align-items:flex-start;flex-direction:column}nav .links{display:none}}
+</style>
+</head>
+<body>
+<nav><div class="brand">✝ The Friends and Family Prayer Altar</div><div class="links"><a href="index.html">Home</a><a href="prayer-request.html">Request Prayer</a></div></nav>
+<header class="hero"><div class="eyebrow">STAND IN AGREEMENT</div><h1>The Prayer Wall</h1><p>Pause here. Read a request. Call someone's name before the Lord. Every prayer is a reminder that no one has to stand alone.</p><div class="scripture">“...pray for one another, so that you may be healed. The effective prayer of a righteous man can accomplish much.” — James 5:16, NASB 1995</div></header>
+<main>
+<div class="heading"><div><h2>Active Prayers</h2><p>These sample cards show how approved public prayer requests will appear.</p></div><a class="btn" href="prayer-request.html">Request Prayer</a></div>
+<div class="grid">
+<article class="card"><span class="tag">Healing</span><h3>Prayer for Strength</h3><p>Please pray for healing, renewed strength, peace, and wisdom for the medical team caring for a loved one.</p><div class="verse">“Do not fear, for I am with you...” — Isaiah 41:10</div><button class="pray" onclick="pray(this)">♡ I Prayed</button><span class="count">12 prayers</span></article>
+<article class="card"><span class="tag">Family</span><h3>Prayer for Peace</h3><p>Please pray for wisdom, reconciliation, and peace for a family walking through a difficult season.</p><div class="verse">“The LORD is near to the brokenhearted...” — Psalm 34:18</div><button class="pray" onclick="pray(this)">♡ I Prayed</button><span class="count">8 prayers</span></article>
+<article class="card"><span class="tag">Guidance</span><h3>Prayer for Direction</h3><p>Please pray that God will provide clarity, wisdom, and courage for an important decision.</p><div class="verse">“Trust in the LORD with all your heart...” — Proverbs 3:5</div><button class="pray" onclick="pray(this)">♡ I Prayed</button><span class="count">15 prayers</span></article>
+</div>
+<section class="praise">
+<div class="eyebrow" style="color:#e7cf9c">GIVE GOD THANKS</div>
+<h2>Answered Prayers & Praise Reports</h2>
+<p>When God moves, we want to remember, give thanks, and encourage one another.</p>
+
+<a class="praise-btn"
+href="https://www.cognitoforms.com/AshbyProfessionalServices/FriendsAndFamilyPrayerRequest"
+target="_blank" rel="noopener">Share a Praise Report</a>
+
+<div class="praise-card">
+<span class="tag">Sample Praise Report</span>
+<h3>Thank You for Praying</h3>
+<p>This space will celebrate answered prayers and testimonies shared by friends and family.</p>
+</div>
+</section>
+</main>
+<footer><strong>The Friends and Family Prayer Altar</strong><br>A place of prayer, faith, encouragement, and love.</footer>
+<script>
+function pray(btn){
+ if(btn.dataset.done)return;
+ btn.dataset.done="1"; btn.textContent="✓ I Prayed";
+ let c=btn.parentElement.querySelector(".count"),n=parseInt(c.textContent)||0;
+ c.textContent=(n+1)+" prayers";
+}
+</script>
+</body></html>
